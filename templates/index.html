@@ -7,6 +7,19 @@
     <title>The Sparks Urban Credit Co-operative Bank</title>
     <link rel="icon" href="{{ url_for('static', filename='/images/logo.ico') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        @media (max-width: 600px) {
+            #title{
+                font-size: 56px;
+                margin-top: -30%;
+                max-width: 10vw;
+            }
+            #lockpic{
+                height: 80%; 
+                padding-top: 100%;
+            }
+        }
+    </style>
 </head>
 <body style="overflow-x: hidden;">
     <!-- Navbar -->
@@ -15,12 +28,10 @@
       </nav>
 
       <!-- big </picture> -->
-      <div style="height: 70vh; width: 190vw; box-shadow: 0px 7px 12px black;">
-        <img src="{{ url_for('static', filename='/images/c1.jpg') }}" class="img-fluid" alt="Responsive image1" style="height: 100%; width: 70%; z-index: -1;">  <br>
-        <p class="display-3 container col-lg-4 col-sm-12 col-md-12 mb-3" style="top:32%; left: 65%; position: absolute; width: 150%;">Transfer your Money
-            Safely..
-        </p><br>
-        <a href="/transfer" id="transfer" class="btn btn-primary btn-lg  "style="margin-top: -12%; margin-left: 45%;">Transfer</a>
+      <div style="height: 70vh; max-width: auto; box-shadow: 0px 5px 7px black;">
+        <img src="{{ url_for('static', filename='/images/c1.jpg') }}" class="img-fluid" alt="Responsive image1" style="height: 100%; width: 100%; z-index: -1;">  <br>
+        <p id="title" class="display-4 col-lg-8 col-sm-6 col-md-10 mb-3" style="top:32%; left: 50%; position: absolute; width: 150%;">Transfer your Money <br> Safely..</p><br>
+        <a href="/transfer" id="transfer" class="btn mb-3 btn-primary btn-lg" style="top: 55%; left: 51%; position: absolute;">Transfer</a>
       </div>
 
     <!-- Wordings -->
@@ -37,9 +48,9 @@
     <!-- highlight -->
     <div class="jumbotron">
         <div class="container">
-            <div class="row">
+            <div class="row justify-evenly">
                 <div class="col col-lg-6">
-                    <img src="{{ url_for('static', filename='/images/c2.jpg') }}" height="350vh" alt="charity img"><br><br>
+                    <img id="lockpic" src="{{ url_for('static', filename='/images/c2.jpg') }}" height="100%" width="100%" alt="charity img"><br><br>
                 </div>
                 <div class="col col-lg-6">
                     <h1 style="font-weight: 600; color: rgb(197, 0, 0);">Working Together For a Bright Future</h1><hr>
@@ -97,7 +108,7 @@
     <br><br>
 
     <!-- footer  -->
-    <div style="background: linear-gradient(45deg, #000201,#0008);font-family: cursive;">
+    <div style="background: linear-gradient(45deg, #000201,#0008);">
         <div class="container">
             <div class="row">
                 <div class="col mt-3">
@@ -111,7 +122,7 @@
                 </div>
                 <div class="col mt-3">
                     <h3 style="font-size: 1.2em; color: bisque; ">CONTACT</h3>
-                    <p style="color: aliceblue;" >Email : akhil@gmail.com</p>
+                    <p style="color: aliceblue;" >Email : akhilharwadekar@gmail.com</p>
                 </div>
                 <div class="col mt-3" style="font-family: 'Courier New', Courier, monospace;">
                     <a href="#about"><h3 style="font-size: 1.2em; color: bisque;">&plus; About Us</h3></a>
